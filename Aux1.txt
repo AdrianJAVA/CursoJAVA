@@ -1,0 +1,133 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Class Cancion"
+      ],
+      "metadata": {
+        "id": "r4BD72xSNynl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 669
+        },
+        "id": "KQt5G__NNwW2",
+        "outputId": "0b3176d4-b612-4f79-8efd-b5169e014897"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese datos de la cancion \n",
+            "Nombre : a\n",
+            "Artista : c\n",
+            "Duracion : 1\n",
+            "Genero Musical (Rock, Jazz, Blues, Funk, Reggae y Rap). : r\n",
+            "Años de Edicion : 2\n",
+            "Cantidad de Likes : 1\n",
+            "  \n",
+            "a - c (1\n",
+            "  \n",
+            "Ingrese datos de la segunda cancion \n",
+            "Nombre : Q\n",
+            "Artista : Q\n",
+            "Duracion : 9\n",
+            "Genero Musical (Rock, Jazz, Blues, Funk, Reggae y Rap). : Q\n",
+            "Años de Edicion : 9\n",
+            "Cantidad de Likes : 9\n",
+            "Q - Q (9\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-8-f2335bd629b6>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     48\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcancion02\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     49\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 50\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"La mayor duracion es \"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcancion01\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmayorDuracion\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcancion02\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     51\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     52\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m<ipython-input-8-f2335bd629b6>\u001b[0m in \u001b[0;36mmayorDuracion\u001b[0;34m(self, otraDuracion)\u001b[0m\n\u001b[1;32m     15\u001b[0m       \u001b[0mdur1\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mduracion\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     16\u001b[0m       \u001b[0mdur2\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0motraDuracion\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 17\u001b[0;31m       \u001b[0;32mif\u001b[0m \u001b[0mdur1\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0mdur2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     18\u001b[0m          \u001b[0;32mreturn\u001b[0m \u001b[0mdur1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     19\u001b[0m       \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: '>' not supported between instances of 'int' and 'Cancion'"
+          ]
+        }
+      ],
+      "source": [
+        "class Cancion:\n",
+        "  def __init__(self, nom=\" \", art=\" \", dur=0, gen=\" \", edi=0, can=0):\n",
+        "    self.nombre = str(nom)\n",
+        "    self.artista = str(art)\n",
+        "    self.duracion = int(dur)\n",
+        "    self.genero = str(gen)\n",
+        "    self.edicion = int(edi)\n",
+        "    self.cantLikes = int(can)\n",
+        "  \n",
+        "  def __str__(self):\n",
+        "    mostrarCancion=self.nombre+\" - \"+self.artista+\" (\"+str(self.duracion) +\")\"\n",
+        "    return mostrarCancion   \n",
+        "\n",
+        "  def mayorDuracion (self,otraCancion):\n",
+        "      cancion1=self\n",
+        "      cancion2=otraCancion\n",
+        "\n",
+        "      if cancion1.duracion > cancion2.duracion:\n",
+        "         return \"La cancion con mayor duracion es \" + cancion1.nombre\n",
+        "      else:\n",
+        "         if cancion2.duracion > cancion1.duracion:\n",
+        "            return \"La cancion con mayor duracion es \" + cancion2.nombre\n",
+        "         else:\n",
+        "            return \"Las canciones tienen igual duracion\"\n",
+        "            \n",
+        "        \n",
+        "#uso del Usuario del TDA\n",
+        "print(\"Ingrese datos de la cancion \")\n",
+        "nombre = input(\"Nombre : \")\n",
+        "artista = input(\"Artista : \")\n",
+        "duracion = input(\"Duracion : \")\n",
+        "genero = input(\"Genero Musical (Rock, Jazz, Blues, Funk, Reggae y Rap). : \")\n",
+        "edicion = input(\"Años de Edicion : \")\n",
+        "cantLikes = input(\"Cantidad de Likes : \")\n",
+        "\n",
+        "print(\"  \")\n",
+        "cancion01 = Cancion(nombre, artista, duracion, genero, edicion, cantLikes)\n",
+        "print(cancion01)\n",
+        "\n",
+        "print(\"  \")\n",
+        "print(\"Ingrese datos de la segunda cancion \")\n",
+        "nombre = input(\"Nombre : \")\n",
+        "artista = input(\"Artista : \")\n",
+        "duracion = input(\"Duracion : \")\n",
+        "genero = input(\"Genero Musical (Rock, Jazz, Blues, Funk, Reggae y Rap). : \")\n",
+        "edicion = input(\"Años de Edicion : \")\n",
+        "cantLikes = input(\"Cantidad de Likes : \")\n",
+        "cancion02 = Cancion(nombre, artista, duracion, genero, edicion, cantLikes)\n",
+        "print(cancion02)\n",
+        "\n",
+        "print(\"La mayor duracion es \" + str(cancion01.mayorDuracion(cancion02)))\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
